@@ -2,6 +2,11 @@ const express = require("express");
 const cors = require("cors");
 const mongodb = require("./db/connect");
 
+const URL = "http://localhost:3000/books";
+fetch(URL)
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
 const app = express();
 const port = process.env.port || 3000;
 

@@ -10,9 +10,7 @@ html
 
 
 NodeJS
-1. build CRUD
-    make sure it works
-2. jwt token???
+1. jwt token???
     look into it 
     needed for unique user sign in
 
