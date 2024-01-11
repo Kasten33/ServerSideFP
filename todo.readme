@@ -1,0 +1,27 @@
+html
+1. search engine
+    search for items in the data base
+    show searchable items
+2. login
+    jwt token
+    sign up? 
+3. css
+    make the website look nice
+
+
+
+NodeJS
+1. build CRUD
+    build get all
+    build get single
+    build update
+    build delete
+    build create
+2. mogodb connection
+    make sure data base is working
+3. jwt token???
+    look into it 
+    needed for unique user sign in
+
+
+
