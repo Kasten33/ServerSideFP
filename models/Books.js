@@ -8,10 +8,10 @@ const BookSchema = new Schema({
   },
   author: {
     type: String,
-    required: false,
+    required: true,
   },
   date_published: {
-    type: Date,
+    type: String,
     required: false,
   },
   ongoing: {

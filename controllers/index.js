@@ -24,7 +24,7 @@ const getSingleBook = async (req, res) => {
       .getDb()
       .db()
       .collection("books")
-      .findOne({ _id: bookID });
+      .find({ _id: bookID });
     result.toArray().then((lists) => {
       res.setHeader("Content-Type", "application/json");
       res.status(200).json(lists[0]);

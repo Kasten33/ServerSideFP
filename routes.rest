@@ -2,11 +2,11 @@
 ### get the root path / 
 GET http://localhost:3000 HTTP/1.1
 
-### 
+### get all books
 get all books GET http://localhost:3000/books HTTP/1.1
 
 ### get one book 
-GET http://localhost:3000/books/659dd64c75547b243bc3b49c HTTP/1.1
+GET http://localhost:3000/books/659f3b3ccccc6370c6cba00f HTTP/1.1
 
 ###create a student
 POST http://localhost:3000/books HTTP/1.1
