@@ -7,16 +7,25 @@
     <title>Final Project</title>
   </head>
   <body>
-    <h1>Hello?</h1>
-  </body>
-  <script src="app.js"></script>
+    <h1>WebNovels</h1>
+    <div class="bookDiv" id="bookID"></div>
 
-  <script>
-    fetch("http://localhost:3000/books")
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  </script>
+    <script>
+      fetch("http://localhost:3000/books")
+        .then((response) => response.json())
+        .then((data) => {
+          let bookData = document.getElementById("bookID");
+          data.forEach((book) => {
+            let bookDiv = document.createElement("div");
+            bookDiv.innerHTML = `
+          <h2>${book.title}</h2>
+          <h3>Author: ${book.author}</h3>
+          <p>Published: ${book.date_published}</p>
+          <p>Ongoing: ${book.ongoing}</p>
+          `;
+            bookData.appendChild(bookDiv);
+          });
+        });
+    </script>
+  </body>
 </html>
