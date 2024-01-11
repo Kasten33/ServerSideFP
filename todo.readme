@@ -17,8 +17,7 @@ NodeJS
     build update
     build delete
     build create
-2. mogodb connection
-    make sure data base is working
+
 3. jwt token???
     look into it 
     needed for unique user sign in
