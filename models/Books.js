@@ -6,12 +6,12 @@ const BookSchema = new Schema({
     type: String,
     required: true,
   },
-  date_published: {
+  author: {
     type: String,
     required: false,
   },
-  author: {
-    type: String,
+  date_published: {
+    type: Date,
     required: false,
   },
   ongoing: {

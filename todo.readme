@@ -9,16 +9,10 @@ html
     make the website look nice
 
 
-
 NodeJS
 1. build CRUD
-    build get all
-    build get single
-    build update
-    build delete
-    build create
-
-3. jwt token???
+    make sure it works
+2. jwt token???
     look into it 
     needed for unique user sign in
 

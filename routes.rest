@@ -1,0 +1,28 @@
+
+### get the root path / 
+GET http://localhost:3000 HTTP/1.1
+
+### 
+get all books GET http://localhost:3000/books HTTP/1.1
+
+### get one book 
+GET http://localhost:3000/books/659dd64c75547b243bc3b49c HTTP/1.1
+
+###create a student
+POST http://localhost:3000/books HTTP/1.1
+Content-Type: application/json
+
+{
+"title":"Shadow Slave", "author":"GuiltyThree", "ongoing":true, "date_published":"2019-01-01"
+}
+
+### update a student 
+PATCH http://localhost:3000/books/659f3b3ccccc6370c6cba00f HTTP/1.1 
+Content-Type: application/json
+
+{
+"title":"Shadow Slave", "author":"GuiltyThree", "ongoing":true, "date_published":"2019-01-01"
+}
+
+### delete a book 
+DELETE http://localhost:3000/books/659f3b3ccccc6370c6cba00f HTTP/1.1
