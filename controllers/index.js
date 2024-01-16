@@ -1,10 +1,6 @@
 const mongodb = require("../db/connect");
 const ObjectId = require("mongodb").ObjectId;
 
-const coolF = (Req, res) => {
-  res.json("Hello from my route!");
-};
-
 const getAllBooks = async (req, res) => {
   try {
     const result = await mongodb.getDb().db().collection("books").find();
@@ -99,7 +95,6 @@ const deleteBook = async (req, res) => {
   }
 };
 module.exports = {
-  coolF,
   getAllBooks,
   getSingleBook,
   createBook,
